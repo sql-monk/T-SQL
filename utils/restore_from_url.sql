@@ -18,7 +18,7 @@ GO
 
 CREATE OR ALTER PROCEDURE restore_from_url
 	@database_name NVARCHAR(128) = 'MasterData', 
-	@url NVARCHAR(MAX) = N's3://s3-551386004022-sql-backup.s3.eu-central-1.amazonaws.com/full/sbpc-sqls220/MasterData/sbpc-sqls220_MasterData_FULL_20231205_000000.bak',
+	@url NVARCHAR(MAX) = N's3://',
 	@with_recovery BIT = 0
 AS
 BEGIN
